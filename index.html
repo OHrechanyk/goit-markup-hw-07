@@ -20,14 +20,17 @@
   </head>
 
   <body>
-    <header class="header">
+    <header class="header ">
       <div class="container header__container">
-        <nav class="navigation">
+        
+         <div class="container-logo">
           <a href="" class="logo"
-            ><span class="logo__accent--web">Web</span
-            ><span class="logo__accent--studio">Studio</span>
-          </a>
-          <ul class="navigation__list">
+          ><span class="logo__accent--web">Web</span
+          ><span class="logo__accent--studio">Studio</span>
+        </a>
+         </div>
+          <nav class="navigation navigation__mobile">
+          <ul class="navigation__list  ">
             <li class="navigation__list--item">
               <a href="./index.html" class="item__link studio site-nav__link site-nav__link--active"
                 >Студия</a
@@ -44,7 +47,7 @@
           </ul>
         </nav>
 
-        <ul class="contacts__list header__container">
+        <ul class="contacts__list header__container ">
           <li class="contact__list--item">
             <a href="mailto:info@devstudio.com" class="contact__link">
               <svg class="contact__link--icon" width="16" height="12">
@@ -68,16 +71,17 @@
 
     <main>
       <!-- Hero-->
-      <section class="hero hero--overlay">
+      <section class="hero hero--overlay ">
         <div class="container">
-          <h1 class="section__title hero__tittle">
+          <h1 class="section__title hero__tittle ">
             ЭФЕКТИВНЫЕ РЕШЕНИЯ <br />ДЛЯ ВАШЕГО БИЗНЕСА
           </h1>
         </div>
 
-        <button type="button" class="button" data-modal-open>
+        <button type="button" class="hero__button" data-modal-open>
           Заказать услугу
         </button>
+            <!--Form modal window -->
         <div class="backdrop is-hidden" data-modal>
           <div class="modal">
             <button class="modal__close" type="button" data-modal-close>
@@ -85,7 +89,7 @@
                 <use href="./images/icons.svg#icon-close-black"></use>
               </svg>
             </button>
-           <!--Form modal window -->
+          
           
           <form class="form">
             <p class="tittle__form ">Оставьте свои данные, мы вам перезвоним</p>

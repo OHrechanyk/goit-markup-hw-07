@@ -1,6 +1,14 @@
 .navigation {
   display: flex;
   align-items: center;
+
+  // &-mobile {
+  //   display: none;
+
+  //   @media (min-width: 1000px) {
+  //     display: block;
+  //   }
+  // }
 }
 .navigation__list,
 .item {
